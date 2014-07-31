@@ -1,0 +1,11 @@
+{
+    "env": {
+        "node": true,
+        "mocha": true
+    },
+    "rules": {
+        "camelcase": 0,
+        "quotes": [2, "single", "avoid-escape"],
+        "no-underscore-dangle": 0
+    }
+}

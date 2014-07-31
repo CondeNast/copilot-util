@@ -1,0 +1,8 @@
+.DS_Store
+lib-cov
+coverage.html
+.git*
+docs/
+examples/
+support/
+test/
