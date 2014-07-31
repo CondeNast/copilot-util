@@ -1,7 +1,9 @@
 'use strict';
 
 var parse = require('..').json.parse;
-var request = require('..').http.request;
+var request = function(options) {
+  return require('..').http.request(options).then(require('..').http.response);
+};
 
 var options = {
   hostname: 'graph.facebook.com',

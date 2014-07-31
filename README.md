@@ -1,6 +1,6 @@
 # copilot-util
 
-Condé Nast Copilot JavaScript utilities
+Condé Nast - Copilot JavaScript utilities
 
 ## Install
 
