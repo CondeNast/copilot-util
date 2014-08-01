@@ -11,8 +11,9 @@ var options = {
   path: '/ping',
   headers: {
     'content-type': 'application/json; charset=utf-8',
-    'accept-encoding': 'zip, deflate, identity'
+    'accept-encoding': 'gzip, deflate, identity'
   },
+  timeout: 3000
 };
 
 request(options).then(parse).done(function(json) {
@@ -20,6 +21,7 @@ request(options).then(parse).done(function(json) {
 });
 
 // note: this version will not send compression headers
+// note: this version will respect the default socket timeout
 request('https://graph.facebook.com/ping').then(parse).done(function(json) {
   console.log(json);
 });
