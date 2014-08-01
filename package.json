@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "pretest": "eslint -c .eslintrc lib/ test/",
-    "test": "mocha --recursive --reporter spec test/"
+    "test": "mocha --recursive --reporter spec test/",
+    "examples": "node examples/run-all"
   },
   "license": "MIT",
   "dependencies": {
