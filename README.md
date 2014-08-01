@@ -1,3 +1,5 @@
+![Logo](https://github.com/condenast/copilot-util/raw/master/assets/loris.png)
+
 # copilot-util
 
 Condé Nast - Copilot JavaScript utilities
@@ -10,35 +12,35 @@ $ npm i copilot-util
 
 # API
 
-  * <a href="#http_request"><code><b>CU.http.request()</b></code></a>
-  * <a href="#http_response"><code><b>CU.http.response()</b></code></a>
-  * <a href="#error_http"><code><b>CU.error.HttpError()</b></code></a>
-  * <a href="#error_timeout"><code><b>CU.error.TimeoutError()</b></code></a>
-  * <a href="#json_parse"><code><b>CU.json.parse()</b></code></a>
+  * <a href="#http_request"><code><b>http.request()</b></code></a>
+  * <a href="#http_response"><code><b>http.response()</b></code></a>
+  * <a href="#error_http"><code><b>error.HttpError()</b></code></a>
+  * <a href="#error_timeout"><code><b>error.TimeoutError()</b></code></a>
+  * <a href="#json_parse"><code><b>json.parse()</b></code></a>
 
 ---
 ### HTTP
 
 <a name="http_request"></a>
-`CU.http.request(options) => Promise → Response~Buffer`
+`http.request(options) => Promise → Response~Buffer`
 
 <a name="http_response"></a>
-`CU.http.response(response) => Promise → Response~Buffer`
+`http.response(response) => Promise → Response~Buffer`
 
 ---
 ### Error
 
 <a name="error_http"></a>
-`CU.error.HttpError(message, statusCode) => HttpError`
+`error.HttpError(message, statusCode) => HttpError`
 
 <a name="error_timeout"></a>
-`CU.error.TimeoutError(message, timeout) => TimeoutError`
+`error.TimeoutError(message, timeout) => TimeoutError`
 
 ---
 ### JSON
 
 <a name="json_parse"></a>
-`CU.json.parse(data) => Promise → Object`
+`json.parse(data) => Promise → Object`
 
 ---
 
