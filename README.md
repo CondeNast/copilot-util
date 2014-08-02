@@ -11,6 +11,14 @@ Condé Nast - Copilot JavaScript utilities
 
 [![NPM](https://nodei.co/npm/copilot-util.png?mini=true)](https://nodei.co/npm/copilot-util/)
 
+## Examples
+
+Usage examples can be found in [/examples](examples)
+
+```shell
+npm run-script examples
+```
+
 # API
 
   * <a href="#http_request"><code><b>http.request()</b></code></a>
@@ -25,34 +33,34 @@ Condé Nast - Copilot JavaScript utilities
 ### HTTP
 
 <a name="http_request"></a>
-`http.request(options) => Promise~Response → Buffer`
+`http.request(options) => Promise~Response → Buffer` <code>([module](lib/http/request))</code>
 
 <a name="http_response"></a>
-`http.response(response) => Promise~Response → Buffer`
+`http.response(response) => Promise~Response → Buffer` <code>([module](lib/http/response))</code>
 
 ---
 ### Error
 
 <a name="error_http"></a>
-`error.HttpError(message, statusCode) => HttpError`
+`error.HttpError(message, statusCode) => HttpError` <code>([module](lib/error))</code>
 
 <a name="error_timeout"></a>
-`error.TimeoutError(message, timeout) => TimeoutError`
+`error.TimeoutError(message, timeout) => TimeoutError` <code>([module](lib/error))</code>
 
 ---
 ### JSON
 
 <a name="json_parse"></a>
-`json.parse(data) => Promise → Object`
+`json.parse(data) => Promise → Object` <code>([module](lib/json))</code>
 
 ---
 ### Core
 
 <a name="core_promise"></a>
-see: [bluebird API](https://github.com/petkaantonov/bluebird/blob/master/API.md)
+see: [bluebird API](https://github.com/petkaantonov/bluebird/blob/master/API.md) <code>([module](lib/core))</code>
 
 <a name="core_collection"></a>
-see: [mori API](http://swannodette.github.io/mori)
+see: [mori API](http://swannodette.github.io/mori) <code>([module](lib/core))</code>
 
 ___
 
