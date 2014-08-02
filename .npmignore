@@ -3,6 +3,7 @@ lib-cov
 coverage.html
 .git*
 assets/
+coverage/
 docs/
 examples/
 support/
