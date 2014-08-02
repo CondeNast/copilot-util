@@ -1,3 +1,9 @@
+2014.08.02, Version 1.1.0 (Stable)
+
+* core: Expose core.Promise and core.collection
+* project: Add examples and module links
+
+
 2014.08.02, Version 1.0.0 (Stable)
 
 * project: Add module documentation and tests
