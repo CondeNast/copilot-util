@@ -18,6 +18,8 @@ Condé Nast - Copilot JavaScript utilities
   * <a href="#error_http"><code><b>error.HttpError()</b></code></a>
   * <a href="#error_timeout"><code><b>error.TimeoutError()</b></code></a>
   * <a href="#json_parse"><code><b>json.parse()</b></code></a>
+  * <a href="#core_promise"><code><b>core.Promise()</b></code></a>
+  * <a href="#core_collection"><code><b>core.collection()</b></code></a>
 
 ---
 ### HTTP
@@ -44,6 +46,15 @@ Condé Nast - Copilot JavaScript utilities
 `json.parse(data) => Promise → Object`
 
 ---
+### Core
+
+<a name="core_promise"></a>
+see: [bluebird API](https://github.com/petkaantonov/bluebird/blob/master/API.md)
+
+<a name="core_collection"></a>
+see: [mori API](http://swannodette.github.io/mori)
+
+___
 
 ## Developer
 
