@@ -1,4 +1,4 @@
-![Logo](https://github.com/condenast/copilot-util/raw/master/assets/loris.png)
+![Logo](assets/loris.png)
 
 # copilot-util
 
@@ -22,10 +22,10 @@ $ npm i copilot-util
 ### HTTP
 
 <a name="http_request"></a>
-`http.request(options) => Promise → Response~Buffer`
+`http.request(options) => Promise~Response → Buffer`
 
 <a name="http_response"></a>
-`http.response(response) => Promise → Response~Buffer`
+`http.response(response) => Promise~Response → Buffer`
 
 ---
 ### Error

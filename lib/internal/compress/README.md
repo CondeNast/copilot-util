@@ -1,6 +1,6 @@
 # compress
 
-This is an internal module for managing request/response data compression.
+An internal module for managing request/response data compression
 
 ## API
 
