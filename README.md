@@ -9,7 +9,7 @@ Condé Nast - Copilot JavaScript utilities
 
 ## Install
 
-[![NPM](https://nodei.co/npm/copilot-util.png?mini=true)](https://nodei.co/npm/copilot-util/)
+[![NPM](https://nodei.co/npm/copilot-util.png?compact=true)](https://nodei.co/npm/copilot-util/)
 
 ## Examples
 
