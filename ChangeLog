@@ -1,3 +1,10 @@
+2014.08.22, Version 1.2.0 (Stable)
+
+* request: Allow max sockets to be configured via NODE_MAX_SOCKETS
+* error: Support an optional URL property on HttpError
+* project: Update nodeico badge to compact version
+
+
 2014.08.02, Version 1.1.0 (Stable)
 
 * core: Expose core.Promise and core.collection
