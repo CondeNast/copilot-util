@@ -18,6 +18,7 @@ describe('HTTP', function() {
       rs.method = 'GET';
       rs.statusCode = 200;
       rs.headers = {};
+      rs.destroy = function() { /* close socket */ };
 
       response(rs).done(function(data) {
         expect(data.toString()).to.eql(str);
@@ -56,6 +57,7 @@ describe('HTTP', function() {
       rs.method = 'GET';
       rs.statusCode = 400;
       rs.headers = {};
+      rs.destroy = function() { /* close socket */ };
 
       response(rs).done(null, function(err) {
         expect(err.message).to.eql('Bad Request');
