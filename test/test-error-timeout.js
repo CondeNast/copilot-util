@@ -39,4 +39,20 @@ describe('TimeoutError', function() {
     expect(te.timeout).to.equal(timeout);
     expect(te.stack).to.be.a('string');
   });
+
+  it('should allow assignment of a URL', function() {
+    var he = new error.HttpError(500);
+
+    var str = 'http://condenast.com';
+    he.url = str;
+
+    expect(he).to.be.an('object');
+    expect(he).to.be.an.instanceof(Error);
+    expect(he).to.be.an.instanceof(error.HttpError);
+    expect(he.message).to.contain('Internal Server Error');
+    expect(he.message).to.contain(str);
+    expect(he.statusCode).to.equal(500);
+    expect(he.url).to.equal(str);
+    expect(he.stack).to.be.a('string');
+  });
 });
