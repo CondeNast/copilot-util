@@ -4,7 +4,7 @@
 
 Condé Nast - Copilot JavaScript utilities
 
-[![Build Status](https://secure.travis-ci.org/CondeNast/copilot-util.png?branch=master)](http://travis-ci.org/CondeNast/copilot-util)
+[ ![Codeship Status for CondeNast/copilot-util](https://www.codeship.io/projects/a276efc0-4349-0132-7175-3af0e78f4535/status)](https://www.codeship.io/projects/44639)
 [![Code Climate](https://codeclimate.com/github/CondeNast/copilot-util/badges/gpa.svg)](https://codeclimate.com/github/CondeNast/copilot-util)
 
 ## Install
