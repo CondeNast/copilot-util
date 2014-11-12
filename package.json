@@ -2,7 +2,7 @@
   "name": "copilot-util",
   "version": "1.4.0",
   "description": "Condé Nast - copilot JavaScript utilities",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "pretest": "eslint -c .eslintrc lib/ test/",
     "test": "mocha --recursive --reporter spec test/",
