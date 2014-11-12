@@ -60,7 +60,7 @@ npm run-script examples
 see: [bluebird API](https://github.com/petkaantonov/bluebird/blob/master/API.md) <code>([module](lib/core))</code>
 
 <a name="core_collection"></a>
-see: [mori API](http://swannodette.github.io/mori) <code>([module](lib/core))</code>
+see: [immutable API](http://facebook.github.io/immutable-js) <code>([module](lib/core))</code>
 
 ___
 

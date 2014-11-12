@@ -12,9 +12,8 @@ describe('Core', function() {
 
     it('should export a collection implementation', function() {
       expect(core.collection).to.be.a('object');
-      expect(core.collection.list).to.be.a('function');
-      expect(core.collection.vector).to.be.a('function');
-      expect(core.collection.set).to.be.a('function');
+      expect(core.collection.List).to.be.a('function');
+      expect(core.collection.Set).to.be.a('function');
     });
   });
 });

@@ -7,7 +7,7 @@ Encapsulates the projects central dependencies
 - Provides an [A+ compatible](http://promisesaplus.com) promise implementation
 - Thanks __@PetkaAntonov__!
 
-## Collection [mori]
+## Collection [immutable]
 
 - Provides immutable, persistant collections
-- Thanks __@swannodette__!
+- Thanks __@facebook__!
