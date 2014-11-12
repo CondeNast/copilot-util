@@ -1,7 +1,7 @@
 {
   "name": "copilot-util",
   "version": "1.4.0",
-  "description": "Condé Nast - Copilot JavaScript utilities",
+  "description": "Condé Nast - copilot JavaScript utilities",
   "main": "index.js",
   "scripts": {
     "pretest": "eslint -c .eslintrc lib/ test/",

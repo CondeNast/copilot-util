@@ -2,7 +2,7 @@
 
 # copilot-util
 
-Condé Nast - Copilot JavaScript utilities
+Condé Nast - copilot JavaScript utilities
 
 [ ![Codeship Status for CondeNast/copilot-util](https://www.codeship.io/projects/a276efc0-4349-0132-7175-3af0e78f4535/status)](https://www.codeship.io/projects/44639)
 [![Code Climate](https://codeclimate.com/github/CondeNast/copilot-util/badges/gpa.svg)](https://codeclimate.com/github/CondeNast/copilot-util)
