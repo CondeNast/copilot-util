@@ -4,7 +4,7 @@ var expect = require('chai').expect;
 var filter = require('..').filter;
 
 describe('Identity Filter', function() {
-  var response = {
+  var res = {
     _maxListeners: 10,
     socket: {
       _connecting: false,
@@ -17,8 +17,8 @@ describe('Identity Filter', function() {
   };
 
   it('should return the same response it received', function(done) {
-    filter.identity(response).done(function(res) {
-      expect(res).to.eql(response);
+    filter.identity(res).done(function(value) {
+      expect(value).to.eql(res);
 
       done();
     });

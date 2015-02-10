@@ -13,7 +13,7 @@ describe('HTTP', function() {
   var endSpy = sinon.spy();
 
   var requestStub = function(options) {
-    return function() {
+    return function createStub() {
       options = options || {};
       return {
         setTimeout: setTimeoutSpy,
