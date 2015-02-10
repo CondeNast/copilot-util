@@ -1,3 +1,14 @@
+2015.02.10, Version 2.2.0 (Stable)
+
+* request: Abort request after timeout error (previous memory leak)
+
+* project: Refactor function names and promise context structure
+
+* bluebird: Upgrade to 2.9.7
+
+* eslint: Upgrade to 0.14.1
+
+
 2015.01.20, Version 2.1.0 (Stable)
 
 * project: Expose dependency versions along w/ SDK
