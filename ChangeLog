@@ -1,3 +1,8 @@
+2015.06.27, Version 2.2.1 (Stable)
+
+* request: Add debug support via `DEBUG=copilot-util:http-request`
+
+
 2015.02.10, Version 2.2.0 (Stable)
 
 * request: Abort request after timeout error (previous memory leak)
