@@ -1,3 +1,9 @@
+2016.03.22, Version 3.0.0 (Stable)
+
+* bluebird: Upgrade to 3.3.4
+* immutable: Upgrade to 3.7.6
+
+
 2015.06.27, Version 2.2.1 (Stable)
 
 * request: Add debug support via `DEBUG=copilot-util:http-request`
