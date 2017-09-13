@@ -2,6 +2,8 @@
 
 # copilot-util
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/CondeNast/copilot-util.svg)](https://greenkeeper.io/)
+
 Condé Nast - copilot JavaScript utilities
 
 [ ![Codeship Status for CondeNast/copilot-util](https://www.codeship.io/projects/a276efc0-4349-0132-7175-3af0e78f4535/status)](https://www.codeship.io/projects/44639)

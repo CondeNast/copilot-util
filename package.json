@@ -18,14 +18,14 @@
   "homepage": "https://github.com/CondeNast/copilot-util",
   "license": "MIT",
   "dependencies": {
-    "bluebird": "3.3.4",
-    "debug": "2.2.0",
-    "immutable": "3.7.6"
+    "bluebird": "3.5.0",
+    "debug": "2.6.6",
+    "immutable": "3.8.1"
   },
   "devDependencies": {
     "chai": "3.5.0",
-    "eslint": "2.4.0",
-    "mocha": "2.4.5",
-    "sinon": "1.17.3"
+    "eslint": "3.19.0",
+    "mocha": "3.3.0",
+    "sinon": "2.2.0"
   }
 }
