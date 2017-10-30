@@ -39,7 +39,7 @@ describe('HTTP', function() {
 
   describe('Request (HTTP)', function() {
     it('should respond with the data mocked into the listener', function(done) {
-      var stub = sinon.stub(http, 'request', requestStub());
+      var stub = sinon.stub(http, 'request').callsFake(requestStub());
       var url = 'http://www.condenast.com';
 
       request(url).done(function(data) {
@@ -62,7 +62,7 @@ describe('HTTP', function() {
 
   describe('Secure Request (HTTPS)', function() {
     it('should respond with the data mocked into the listener', function(done) {
-      var stub = sinon.stub(https, 'request', requestStub());
+      var stub = sinon.stub(https, 'request').callsFake(requestStub());
       var url = 'https://www.condenast.com';
 
       request(url).done(function(data) {
@@ -85,7 +85,7 @@ describe('HTTP', function() {
 
   describe('Request (HTTP) HttpError', function() {
     it('should respond with the data mocked into the listener', function(done) {
-      var stub = sinon.stub(http, 'request', requestStub({ error: true }));
+      var stub = sinon.stub(http, 'request').callsFake(requestStub({ error: true }));
       var url = 'http://www.condenast.com';
 
       request(url).done(null, function(err) {
