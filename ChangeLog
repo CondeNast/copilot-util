@@ -1,3 +1,6 @@
+* project: use caret semver for devDependencies and allow Greenkeeper to test updates.
+  This requires fewer package updates and time spent on maintenance.
+
 2016.03.22, Version 3.0.0 (Stable)
 
 * bluebird: Upgrade to 3.3.4
