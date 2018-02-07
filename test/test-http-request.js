@@ -5,6 +5,7 @@ var https = require('https');
 var expect = require('chai').expect;
 var request = require('..').http.request;
 var sinon = require('sinon');
+var PassThrough = require('stream').PassThrough;
 
 describe('HTTP', function() {
   var buf = new Buffer('渚 カヲル Nagisa Kaoru');
@@ -103,6 +104,45 @@ describe('HTTP', function() {
         stub.restore();
         done();
       });
+    });
+  });
+
+  describe('URLs in error messages', function () {
+    beforeEach(function() {
+      this.httpRequestStub = sinon.stub(http, 'request');
+    });
+
+    afterEach(function() {
+      http.request.restore();
+    });
+
+    it('should add the request URL to an HttpError', function(done) {
+      var passThru = new PassThrough();
+      this.httpRequestStub.returns(passThru);
+
+      request('http://foo.com/bar')
+        .catch(function (e) {
+          expect(e.message).to.equal('Lorem Ipsum (http://foo.com/bar)')
+          done();
+        });
+
+      passThru.emit('error', new Error('Lorem Ipsum'));
+    });
+
+    it('should add the request URL to a TimeoutError', function(done) {
+      var req = {
+        setTimeout: function(ms, callback) {
+          callback();
+        },
+        abort: function() { }
+      };
+      this.httpRequestStub.returns(req);
+
+      request('http://foo.com/bar')
+        .catch(function (e) {
+          expect(e.message).to.equal('Timeout of 15000ms reached (http://foo.com/bar)')
+          done();
+        });
     });
   });
 });
