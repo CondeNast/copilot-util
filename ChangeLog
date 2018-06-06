@@ -1,3 +1,5 @@
+* project: update sinon to version ^5.1.0
+
 2018.04.12, Version 3.1.0 (Stable)
 
 * Show the full URL in a timeout error (#10)

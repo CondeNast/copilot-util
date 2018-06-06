@@ -34,8 +34,8 @@ describe('HTTP', function() {
   };
 
   afterEach(function() {
-    setTimeoutSpy.reset();
-    endSpy.reset();
+    setTimeoutSpy.resetHistory();
+    endSpy.resetHistory();
   });
 
   describe('Request (HTTP)', function() {
