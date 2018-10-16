@@ -1,4 +1,5 @@
 * project: update sinon to version ^5.1.0
+* request: enable keepAlive by default
 
 2018.04.12, Version 3.1.0 (Stable)
 
