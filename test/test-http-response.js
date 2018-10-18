@@ -65,5 +65,23 @@ describe('HTTP', function() {
         done();
       });
     });
+
+    it('should add the URL to a >400 response error', function(done) {
+      var res = {
+        statusCode: 404,
+        req: {
+          getHeader: function() {
+            return 'www.foo.com';
+          },
+          path: '/bar'
+        },
+        destroy: function() { /* close socket */ }
+      };
+
+      response(res).catch(function(error) {
+        expect(error.message).to.eql('Not Found (www.foo.com/bar)');
+        done();
+      });
+    })
   });
 });

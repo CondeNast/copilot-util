@@ -1,3 +1,13 @@
+2018.10.16, Version 3.2.0 (Stable)
+* project: update sinon to version ^5.1.0
+* request: enable keepAlive by default
+
+2018.04.12, Version 3.1.0 (Stable)
+
+* Show the full URL in a timeout error (#10)
+* project: use caret semver for devDependencies and allow Greenkeeper to test updates.
+  This requires fewer package updates and time spent on maintenance.
+
 2016.03.22, Version 3.0.0 (Stable)
 
 * bluebird: Upgrade to 3.3.4
