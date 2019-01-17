@@ -1,6 +1,6 @@
 {
   "name": "copilot-util",
-  "version": "3.1.0",
+  "version": "3.2.0",
   "description": "Condé Nast - copilot JavaScript utilities",
   "main": "lib/index.js",
   "scripts": {
@@ -18,7 +18,8 @@
   "homepage": "https://github.com/CondeNast/copilot-util",
   "license": "MIT",
   "dependencies": {
-    "bluebird": "3.5.1",
+    "agentkeepalive": "3.5.2",
+    "bluebird": "3.5.3",
     "debug": "4.1.0",
     "immutable": "3.8.1"
   },
