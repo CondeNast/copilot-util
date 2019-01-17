@@ -20,7 +20,7 @@
   "dependencies": {
     "agentkeepalive": "3.5.2",
     "bluebird": "3.5.3",
-    "debug": "3.2.2",
+    "debug": "4.1.0",
     "immutable": "3.8.1"
   },
   "devDependencies": {
