@@ -8,6 +8,10 @@ Condé Nast - copilot JavaScript utilities
 [![Code Climate](https://codeclimate.com/github/CondeNast/copilot-util/badges/gpa.svg)](https://codeclimate.com/github/CondeNast/copilot-util)
 [![Greenkeeper badge](https://badges.greenkeeper.io/CondeNast/copilot-util.svg)](https://greenkeeper.io/)
 
+## Maintainers
+
+- Phil Gold ([@pgoldrbx](https://github.com/pgoldrbx) / phil_gold@condenast.com)
+
 ## Install
 
 [![NPM](https://nodei.co/npm/copilot-util.png?compact=true)](https://nodei.co/npm/copilot-util/)
