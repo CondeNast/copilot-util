@@ -1,11 +1,15 @@
 'use strict';
 
+var core = require('../lib/core');
 var http = require('http');
 var https = require('https');
 var expect = require('chai').expect;
 var request = require('..').http.request;
 var sinon = require('sinon');
 var PassThrough = require('stream').PassThrough;
+var nock = require('nock');
+var sleep = require('sleep');
+var url = require('url');
 
 describe('HTTP', function() {
   var buf = new Buffer('渚 カヲル Nagisa Kaoru');
@@ -107,7 +111,7 @@ describe('HTTP', function() {
     });
   });
 
-  describe('URLs in error messages', function () {
+  describe('URLs in error messages', function() {
     beforeEach(function() {
       this.httpRequestStub = sinon.stub(http, 'request');
     });
@@ -121,8 +125,8 @@ describe('HTTP', function() {
       this.httpRequestStub.returns(passThru);
 
       request('http://foo.com/bar')
-        .catch(function (e) {
-          expect(e.message).to.equal('Lorem Ipsum (http://foo.com/bar)')
+        .catch(function(e) {
+          expect(e.message).to.equal('Lorem Ipsum (http://foo.com/bar)');
           done();
         });
 
@@ -139,10 +143,48 @@ describe('HTTP', function() {
       this.httpRequestStub.returns(req);
 
       request('http://foo.com/bar')
-        .catch(function (e) {
-          expect(e.message).to.equal('Timeout of 15000ms reached (http://foo.com/bar)')
+        .catch(function(e) {
+          expect(e.message).to.equal('Timeout of 15000ms reached (http://foo.com/bar)');
           done();
         });
     });
+  });
+
+  describe('TimeoutError', function() {
+
+    it.only('should not TimeoutError if request succeeded but event loop was blocked', function(done) {
+
+      // var scope = nock('http://foo.com')
+      //   .get('/foo')
+      //   .once()
+      //   .delayConnection(100)
+      //   .reply(200, 'ok');
+
+      var server = http.createServer(function(request, response) {
+        response.end('ok');
+      });
+
+      server.listen(3000, function(err) {
+        if (err) {
+          return done(err);
+        }
+
+        var requestOptions = Object.assign({ timeout: 100 }, url.parse('http://localhost:3000/'));
+
+        var promise = request(requestOptions);
+        sleep.msleep(200);  // timeout was 100ms, sleep for 200ms
+
+        promise
+          .catch(function(err) {
+            console.log(err);
+          })
+          .then(function(a) {
+            // console.log(a);
+            server.close();
+            done();
+          });
+      });
+    });
+
   });
 });

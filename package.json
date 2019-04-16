@@ -21,12 +21,14 @@
     "agentkeepalive": "3.5.2",
     "bluebird": "3.5.4",
     "debug": "4.1.0",
-    "immutable": "3.8.1"
+    "immutable": "3.8.1",
+    "sleep": "^6.0.0"
   },
   "devDependencies": {
     "chai": "^4.1.2",
     "eslint": "^5.0.0",
     "mocha": "^6.0.0",
+    "nock": "^10.0.6",
     "sinon": "^7.2.4"
   }
 }
