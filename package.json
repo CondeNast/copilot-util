@@ -20,8 +20,8 @@
   "dependencies": {
     "agentkeepalive": "3.5.2",
     "bluebird": "3.5.5",
-    "debug": "4.1.0",
-    "immutable": "3.8.1"
+    "debug": "4.1.1",
+    "immutable": "3.8.2"
   },
   "devDependencies": {
     "chai": "^4.1.2",
