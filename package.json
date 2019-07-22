@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "pretest": "eslint -c .eslintrc lib/ test/",
-    "test": "mocha --recursive --reporter spec test/",
+    "test": "nyc --reporter=lcov --reporter=text mocha --recursive --reporter spec test/",
     "examples": "node examples/run-all"
   },
   "repository": {
@@ -27,6 +27,7 @@
     "chai": "^4.1.2",
     "eslint": "^5.0.0",
     "mocha": "^6.0.0",
+    "nyc": "^14.1.1",
     "sinon": "^7.2.4"
   }
 }
