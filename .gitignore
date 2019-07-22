@@ -15,6 +15,7 @@ pids
 logs
 results
 coverage
+.nyc_output
 
 npm-debug.log
 node_modules/
