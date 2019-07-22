@@ -4,9 +4,9 @@
 
 Condé Nast - copilot JavaScript utilities
 
-[ ![Codeship Status for CondeNast/copilot-util](https://www.codeship.io/projects/a276efc0-4349-0132-7175-3af0e78f4535/status)](https://www.codeship.io/projects/44639)
+[![Build Status](https://travis-ci.org/CondeNast/copilot-util.svg?branch=master)](https://travis-ci.org/CondeNast/copilot-util)
 [![Code Climate](https://codeclimate.com/github/CondeNast/copilot-util/badges/gpa.svg)](https://codeclimate.com/github/CondeNast/copilot-util)
-[![Greenkeeper badge](https://badges.greenkeeper.io/CondeNast/copilot-util.svg)](https://greenkeeper.io/)
+[![Coverage Status](https://coveralls.io/repos/github/CondeNast/copilot-util/badge.svg?branch=master)](https://coveralls.io/github/CondeNast/copilot-util?branch=master)
 
 ## Maintainers
 
