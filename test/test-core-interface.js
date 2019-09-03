@@ -25,7 +25,7 @@ describe('Core', function() {
     describe('Native Promises', function() {
       before(function () {
         // Reload the library using native promises
-        process.env.PROMISE_TYPE = 'native';
+        process.env.COPILOT_PROMISE_TYPE = 'native';
 
         // Delete the cached modules
         delete require.cache[require.resolve('..')];
@@ -37,7 +37,7 @@ describe('Core', function() {
 
       after(function () {
         // Reload the library using default Bluebird promises
-        delete process.env.PROMISE_TYPE;
+        delete process.env.COPILOT_PROMISE_TYPE;
 
         // Delete the cached modules
         delete require.cache[require.resolve('..')];
