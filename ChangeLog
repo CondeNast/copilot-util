@@ -1,3 +1,6 @@
+2019.09.03, Version 3.2.0-exp-allow-native-promises.1 (Experimental)
+* Add env var to opt-in to native promises
+
 2018.10.16, Version 3.2.0 (Stable)
 * project: update sinon to version ^5.1.0
 * request: enable keepAlive by default
