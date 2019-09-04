@@ -1,4 +1,6 @@
 Unreleased
+* Update ignore files (#72)
+* Address npm audit issues (#73)
 * Require Node 8 (#74)
 
 2018.10.16, Version 3.2.0 (Stable)
