@@ -3,9 +3,9 @@ language: node_js
 cache: npm
 
 node_js:
-  - "6"
   - "8"
   - "10"
+  - "12"
 
 branches:
   only:
@@ -13,9 +13,6 @@ branches:
 
 notifications:
   email: false
-
-before_install:
-  - npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN
 
 after_success:
   - if [[ $(node -v) == v10* ]]; then npm install coveralls; ./node_modules/.bin/coveralls < coverage/lcov.info; fi
