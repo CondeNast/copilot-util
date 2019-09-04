@@ -2,6 +2,8 @@
 lib-cov
 coverage.html
 .git*
+.nyc_output/
+.vscode/
 assets/
 coverage/
 docs/
