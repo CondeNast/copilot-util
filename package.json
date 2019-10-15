@@ -18,8 +18,8 @@
   "homepage": "https://github.com/CondeNast/copilot-util",
   "license": "MIT",
   "dependencies": {
-    "agentkeepalive": "4.0.2",
-    "bluebird": "3.5.5",
+    "agentkeepalive": "4.1.0",
+    "bluebird": "3.7.1",
     "debug": "4.1.1",
     "immutable": "3.8.2"
   },
