@@ -11,10 +11,10 @@ var options = {
   }
 };
 
-request(options).then(response).done(function(buffer) {
+request(options).then(response).then(function(buffer) {
   console.log(buffer.toString().length);
 });
 
-request('https://www.google.com').then(response).done(function(buffer) {
+request('https://www.google.com').then(response).then(function(buffer) {
   console.log(buffer.toString().length);
 });

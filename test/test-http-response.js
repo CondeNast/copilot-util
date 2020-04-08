@@ -20,7 +20,7 @@ describe('HTTP', function() {
       rs.headers = {};
       rs.destroy = function() { /* close socket */ };
 
-      response(rs).done(function(data) {
+      response(rs).then(function(data) {
         expect(data.toString()).to.eql(str);
 
         done();
@@ -41,7 +41,7 @@ describe('HTTP', function() {
         'content-encoding': 'gzip'
       };
 
-      response(zrs).done(function(data) {
+      response(zrs).then(function(data) {
         expect(data.toString()).to.eql(str);
 
         done();
@@ -59,7 +59,7 @@ describe('HTTP', function() {
       rs.headers = {};
       rs.destroy = function() { /* close socket */ };
 
-      response(rs).done(null, function(err) {
+      response(rs).then(null, function(err) {
         expect(err.message).to.eql('Bad Request');
 
         done();

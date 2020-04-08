@@ -43,7 +43,7 @@ describe('HTTP', function() {
       var stub = sinon.stub(http, 'request').callsFake(requestStub());
       var url = 'http://www.condenast.com';
 
-      request(url).done(function(data) {
+      request(url).then(function(data) {
         var args = stub.args[0][0];
         expect(args.protocol).to.eql('http:');
         expect(args.href).to.eql(url + '/');
@@ -66,7 +66,7 @@ describe('HTTP', function() {
       var stub = sinon.stub(https, 'request').callsFake(requestStub());
       var url = 'https://www.condenast.com';
 
-      request(url).done(function(data) {
+      request(url).then(function(data) {
         var args = stub.args[0][0];
         expect(args.protocol).to.eql('https:');
         expect(args.href).to.eql(url + '/');
@@ -89,7 +89,7 @@ describe('HTTP', function() {
       var stub = sinon.stub(http, 'request').callsFake(requestStub({ error: true }));
       var url = 'http://www.condenast.com';
 
-      request(url).done(null, function(err) {
+      request(url).then(null, function(err) {
         var args = stub.args[0][0];
         expect(args.protocol).to.eql('http:');
         expect(args.href).to.eql(url + '/');

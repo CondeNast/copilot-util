@@ -11,13 +11,13 @@ var options = {
   }
 };
 
-request(options).then(identity).then(response).done(function(buffer) {
+request(options).then(identity).then(response).then(function(buffer) {
   console.log(buffer.toString().length);
 });
 
 request('http://www.google.com')
   .then(identity)
   .then(response)
-  .done(function(buffer) {
+  .then(function(buffer) {
     console.log(buffer.toString().length);
   });

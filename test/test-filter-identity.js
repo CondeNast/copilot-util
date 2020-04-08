@@ -17,7 +17,7 @@ describe('Identity Filter', function() {
   };
 
   it('should return the same response it received', function(done) {
-    filter.identity(res).done(function(value) {
+    filter.identity(res).then(function(value) {
       expect(value).to.eql(res);
 
       done();
