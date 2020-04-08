@@ -12,7 +12,7 @@ describe('HTTP', function() {
     it('should transmit response data', function(done) {
       var rs = new stream.Readable();
       rs._read = function() {
-        this.push(new Buffer(str));
+        this.push(Buffer.from(str));
         this.push(null);
       };
       rs.method = 'GET';
@@ -30,7 +30,7 @@ describe('HTTP', function() {
     it('should automatically handle compressed data', function(done) {
       var rs = new stream.Readable();
       rs._read = function() {
-        this.push(new Buffer(str));
+        this.push(Buffer.from(str));
         this.push(null);
       };
 
@@ -51,7 +51,7 @@ describe('HTTP', function() {
     it('should reject error HTTP statuses', function(done) {
       var rs = new stream.Readable();
       rs._read = function() {
-        this.push(new Buffer(str));
+        this.push(Buffer.from(str));
         this.push(null);
       };
       rs.method = 'GET';

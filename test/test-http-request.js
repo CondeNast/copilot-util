@@ -8,7 +8,7 @@ var sinon = require('sinon');
 var PassThrough = require('stream').PassThrough;
 
 describe('HTTP', function() {
-  var buf = new Buffer('渚 カヲル Nagisa Kaoru');
+  var buf = Buffer.from('渚 カヲル Nagisa Kaoru');
 
   var setTimeoutSpy = sinon.spy();
   var endSpy = sinon.spy();
