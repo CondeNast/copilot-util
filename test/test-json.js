@@ -10,7 +10,7 @@ describe('JSON', function() {
 
   describe('parse', function() {
     it('should convert a JSON string into an object', function(done) {
-      json.parse(JSON.stringify(data)).done(function(obj) {
+      json.parse(JSON.stringify(data)).then(function(obj) {
         expect(obj).to.eql(data);
 
         done();
@@ -18,7 +18,7 @@ describe('JSON', function() {
     });
 
     it('should convert a buffer with JSON into an object', function(done) {
-      json.parse(new Buffer(JSON.stringify(data))).done(function(obj) {
+      json.parse(new Buffer(JSON.stringify(data))).then(function(obj) {
         expect(obj).to.eql(data);
 
         done();
@@ -26,7 +26,7 @@ describe('JSON', function() {
     });
 
     it('should convert a buffer with JSON into an object', function(done) {
-      json.parse(new Buffer(JSON.stringify(data))).done(function(obj) {
+      json.parse(new Buffer(JSON.stringify(data))).then(function(obj) {
         expect(obj).to.eql(data);
 
         done();
@@ -36,7 +36,7 @@ describe('JSON', function() {
     it('should reject invalid JSON', function(done) {
       var token = '>';
 
-      json.parse(JSON.stringify(data) + token).done(null, function(err) {
+      json.parse(JSON.stringify(data) + token).then(null, function(err) {
         expect(err).to.be.an.instanceof(SyntaxError);
         expect(err.message).to.contain(token);
 

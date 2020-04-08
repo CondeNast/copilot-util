@@ -16,12 +16,12 @@ var options = {
   timeout: 3000
 };
 
-request(options).then(parse).done(function(json) {
+request(options).then(parse).then(function(json) {
   console.log(json);
 });
 
 // note: this version will not send compression headers
 // note: this version will respect the default socket timeout
-request('https://graph.facebook.com/ping').then(parse).done(function(json) {
+request('https://graph.facebook.com/ping').then(parse).then(function(json) {
   console.log(json);
 });

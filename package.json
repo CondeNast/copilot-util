@@ -19,7 +19,6 @@
   "license": "MIT",
   "dependencies": {
     "agentkeepalive": "4.1.0",
-    "bluebird": "3.7.2",
     "debug": "4.1.1",
     "immutable": "3.8.2"
   },

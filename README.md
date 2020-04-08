@@ -32,7 +32,6 @@ npm run-script examples
   * <a href="#error_http"><code><b>error.HttpError()</b></code></a>
   * <a href="#error_timeout"><code><b>error.TimeoutError()</b></code></a>
   * <a href="#json_parse"><code><b>json.parse()</b></code></a>
-  * <a href="#core_promise"><code><b>core.Promise()</b></code></a>
   * <a href="#core_collection"><code><b>core.collection()</b></code></a>
 
 ---
@@ -61,9 +60,6 @@ npm run-script examples
 
 ---
 ### Core
-
-<a name="core_promise"></a>
-see: [bluebird API](https://github.com/petkaantonov/bluebird/blob/master/API.md) <code>([module](lib/core))</code>
 
 <a name="core_collection"></a>
 see: [immutable API](http://facebook.github.io/immutable-js) <code>([module](lib/core))</code>
