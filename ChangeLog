@@ -1,4 +1,5 @@
 Unreleased
+* BREAKING: Remove immutable and core interface
 * Update ignore files (#72)
 * Address npm audit issues (#73)
 * Require Node 8 (#74)

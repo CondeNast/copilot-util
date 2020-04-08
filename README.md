@@ -32,7 +32,6 @@ npm run-script examples
   * <a href="#error_http"><code><b>error.HttpError()</b></code></a>
   * <a href="#error_timeout"><code><b>error.TimeoutError()</b></code></a>
   * <a href="#json_parse"><code><b>json.parse()</b></code></a>
-  * <a href="#core_collection"><code><b>core.collection()</b></code></a>
 
 ---
 ### HTTP
@@ -57,12 +56,6 @@ npm run-script examples
 
 <a name="json_parse"></a>
 `json.parse(data) => Promise → Object` <code>([module](lib/json))</code>
-
----
-### Core
-
-<a name="core_collection"></a>
-see: [immutable API](http://facebook.github.io/immutable-js) <code>([module](lib/core))</code>
 
 ___
 
