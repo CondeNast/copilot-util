@@ -18,7 +18,7 @@ describe('JSON', function() {
     });
 
     it('should convert a buffer with JSON into an object', function(done) {
-      json.parse(new Buffer(JSON.stringify(data))).then(function(obj) {
+      json.parse(Buffer.from(JSON.stringify(data))).then(function(obj) {
         expect(obj).to.eql(data);
 
         done();
@@ -26,7 +26,7 @@ describe('JSON', function() {
     });
 
     it('should convert a buffer with JSON into an object', function(done) {
-      json.parse(new Buffer(JSON.stringify(data))).then(function(obj) {
+      json.parse(Buffer.from(JSON.stringify(data))).then(function(obj) {
         expect(obj).to.eql(data);
 
         done();

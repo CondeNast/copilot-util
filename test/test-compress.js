@@ -19,7 +19,7 @@ describe('Compress', function() {
     it('should uncompress gzip response data', function(done) {
       res.headers['content-encoding'] = 'gzip';
 
-      zlib.gzip(new Buffer(str), function(err, buffer) {
+      zlib.gzip(Buffer.from(str), function(err, buffer) {
         expect(err).to.equal(null);
         compress.unzip(res, buffer).then(function(buf) {
           expect(buf.toString()).to.equal(str);
@@ -32,7 +32,7 @@ describe('Compress', function() {
     it('should uncompress deflate response data', function(done) {
       res.headers['content-encoding'] = 'deflate';
 
-      zlib.deflate(new Buffer(str), function(err, buffer) {
+      zlib.deflate(Buffer.from(str), function(err, buffer) {
         expect(err).to.equal(null);
         compress.unzip(res, buffer).then(function(buf) {
           expect(buf.toString()).to.equal(str);
@@ -55,7 +55,7 @@ describe('Compress', function() {
     it('should not uncompress identity response data', function(done) {
       res.headers['content-encoding'] = 'identity';
 
-      compress.unzip(res, new Buffer(str)).then(function(buf) {
+      compress.unzip(res, Buffer.from(str)).then(function(buf) {
         expect(buf.toString()).to.equal(str);
 
         done();
@@ -65,7 +65,7 @@ describe('Compress', function() {
     it('should ignore empty/other encodings', function(done) {
       res.headers['content-encoding'] = '';
 
-      compress.unzip(res, new Buffer(str)).then(function(buf) {
+      compress.unzip(res, Buffer.from(str)).then(function(buf) {
         expect(buf.toString()).to.equal(str);
 
         done();
