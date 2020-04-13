@@ -3,7 +3,6 @@ language: node_js
 cache: npm
 
 node_js:
-  - "8"
   - "10"
   - "12"
 
@@ -15,4 +14,4 @@ notifications:
   email: false
 
 after_success:
-  - if [[ $(node -v) == v10* ]]; then npm install coveralls; ./node_modules/.bin/coveralls < coverage/lcov.info; fi
+  - if [[ $(node -v) == v12* ]]; then npm install coveralls; ./node_modules/.bin/coveralls < coverage/lcov.info; fi
