@@ -1,6 +1,6 @@
 {
   "name": "copilot-util",
-  "version": "3.2.0",
+  "version": "4.0.0",
   "description": "Condé Nast - copilot JavaScript utilities",
   "main": "lib/index.js",
   "scripts": {
