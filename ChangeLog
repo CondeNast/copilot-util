@@ -1,4 +1,5 @@
 Unreleased
+* Require Node 10
 * BREAKING: Remove immutable and core interface
 * Update ignore files (#72)
 * Address npm audit issues (#73)
