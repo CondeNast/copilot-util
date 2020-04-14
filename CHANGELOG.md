@@ -1,10 +1,29 @@
 Unreleased
-* Require Node 10
-* BREAKING: Remove immutable and core interface
-* Update ignore files (#72)
-* Address npm audit issues (#73)
-* Require Node 8 (#74)
-* fix(deps): update dependency agentkeepalive to v4.0.2 (#65)
+
+# [4.0.0](https://github.com/CondeNast/copilot-util/compare/v3.2.0...v4.0.0) (2020-04-13)
+
+### BREAKING CHANGES
+
+* Drop support for node earlier than version 10 ([#74], [#86])
+* Remove immutable and exported `core` interface ([#85])
+* Remove `core.collection` ([#85])
+* Remove bluebird in favor of native `Promise` ([#83])
+* Remove `core.Promise` ([#83])
+
+### Fixes
+
+* **deps:** Update dependency agentkeepalive to v4.1.0 ([#65], [#78])
+* **deps:** Update dependency debug to v4.1.1 ([#50], [#63])
+
+[#86]: https://github.com/CondeNast/copilot-util/pull/86
+[#85]: https://github.com/CondeNast/copilot-util/pull/85
+[#84]: https://github.com/CondeNast/copilot-util/pull/84
+[#83]: https://github.com/CondeNast/copilot-util/pull/83
+[#78]: https://github.com/CondeNast/copilot-util/pull/78
+[#74]: https://github.com/CondeNast/copilot-util/pull/74
+[#65]: https://github.com/CondeNast/copilot-util/pull/65
+[#63]: https://github.com/CondeNast/copilot-util/pull/63
+[#50]: https://github.com/CondeNast/copilot-util/pull/50
 
 2018.10.16, Version 3.2.0 (Stable)
 * project: update sinon to version ^5.1.0
