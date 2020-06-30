@@ -10,8 +10,7 @@ Condé Nast - copilot JavaScript utilities
 
 ## Maintainers
 
-- Phil Gold ([@pgoldrbx](https://github.com/pgoldrbx) / phil_gold@condenast.com)
-- Zack Tollman ([@tollman](https://github.com/tollmanz) / zackary_tollman@condenast.com)
+- Zack Tollman ([@tollmanz](https://github.com/tollmanz) / zackary_tollman@condenast.com)
 
 ## Install
 
